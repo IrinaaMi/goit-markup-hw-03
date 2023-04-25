@@ -100,11 +100,10 @@ button {
 .header-contact-links {
   display: flex;
   gap: 40px;
-
 }
 
 .nav-link-section {
-  justify-content: right;
+  
 }
 
 .header-container {
@@ -161,6 +160,7 @@ button {
   letter-spacing: 0.02em;
   color: var(--white-color);
   text-align: center;
+margin: auto;
 }
 
 .order-service-btn {
@@ -178,6 +178,7 @@ button {
   letter-spacing: 0.04em;
   display: block;
   cursor: pointer;
+  margin: auto;
 }
 
 .btn:hover {
@@ -211,7 +212,7 @@ button {
   color: var(--light-color);
 }
 .about-us-section{
-  padding: 120px 0
+  padding: 120px 0;
 }
 
 .about-us-list-item{
@@ -219,7 +220,9 @@ button {
 }
 
 /* What are we doing */
-
+.what-are-we-doing-section{
+  padding-bottom: 120px;
+}
 .title {
   font-weight: 700;
   font-size: 36px;
@@ -235,7 +238,6 @@ button {
 .what-are-we-doing-list {
   display: flex;
   gap: 24px;
-  padding-bottom: 120px;
 }
 .what-are-we-doing-item{
   width: calc((100% - 48px) / 3);
@@ -302,9 +304,6 @@ border-radius: 0px 0px 4px 4px;
   background-color: var(--bg-dark-color);
   font-family: var(--secondary-font);
   height: 312px;
-}
-
-.footer-items{
   padding: 100px 0;
 }
 
@@ -316,6 +315,7 @@ border-radius: 0px 0px 4px 4px;
   color: var(--secondary-text-color);
   font-family: var(--primary-font);
   margin-top: 16px;
+  width: 264px;
 }
 
 .footer-logo {
@@ -352,7 +352,7 @@ border-radius: 0px 0px 4px 4px;
   letter-spacing: 0.04em;
   color: var(--accent-color);
   padding: 12px 24px;
-  border: 1px var(--portfolio-btn-color);
+  border: 1px solid var(--portfolio-btn-color);
   border-radius: 4px;
   cursor: pointer;
 }
@@ -369,11 +369,13 @@ border-radius: 0px 0px 4px 4px;
 .page-nav-button:hover {
   color: var(--white-color);
   background-color: var(--hover-focus-color);
+  border: 1px solid transparent;
 }
 
 .page-nav-button:focus {
   color: var(--white-color);
   background-color: var(--hover-focus-color);
+  border: 1px solid transparent;
 }
 /* Portfolio list */
 .list-item-name {
@@ -415,13 +417,11 @@ border-radius: 0px 0px 4px 4px;
 .portfilio-card-item{
   border: 1px solid #E7E9FC;
   padding-bottom: 32px;
-  padding-left: 16px;
   margin-bottom: 48px;
   width: calc((100% - 48px) / 3);
 }
 
 .app-name-item{
   padding: 32px 16px;
-  border: 1px solid #e7e9fc;
   border-top: none;
 }
