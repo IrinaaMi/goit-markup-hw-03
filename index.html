@@ -21,13 +21,13 @@
   </head>
   <body>
     <!-- Header -->
-    <header>
-      <div class="header-container">
-        <a href="./index.html" class="link logo"
-          >Web<span class="logo-part">Studio</span></a
-        >
-        <nav>
-          <ul class="list header-nav-list">
+    <header class="main-header-container">
+      <div class="header-container container">
+        <nav class="header-nav-links">
+          <a href="./index.html" class="link logo main-page-logo"
+            >Web<span class="logo-part">Studio</span></a
+          >
+          <ul class="list header-nav-links">
             <li>
               <a href="./index.html" class="link header-nav-item">Studio</a>
             </li>
@@ -57,13 +57,15 @@
     </header>
     <!-- Hero -->
     <main>
-      <section class="hero">
-        <h1 class="main-title">Effective Solutions for Your Business</h1>
-        <button type="button" class="btn">Order Service</button>
+      <section class="main-hero-section">
+        <div class="container">
+          <h1 class="main-hero-title">Effective Solutions for Your Business</h1>
+          <button type="button" class="order-service-btn">Order Service</button>
+        </div>
       </section>
       <!-- About us -->
       <section class="section">
-        <div class="container">
+        <div class="container about-us-section">
           <h2 hidden class="main-page-title">About us</h2>
           <ul class="list about-us">
             <li class="about-us-list-item">
@@ -102,7 +104,7 @@
         <div class="container">
           <h2 class="title">What are we doing</h2>
           <ul class="list what-are-we-doing-list">
-            <li>
+            <li class="what-are-we-doing-item">
               <img
                 src="./images/what-we-do/comp.jpg"
                 alt="computer screen"
@@ -133,8 +135,10 @@
                 alt="man with beard"
                 width="264"
               />
-              <h3 class="team-name">Mark Guerrero</h3>
-              <p class="team-descr">Product Designer</p>
+              <div class="team-name-item">
+                <h3 class="team-member-name">Mark Guerrero</h3>
+                <p class="team-members-descr">Product Designer</p>
+              </div>
             </li>
             <li class="team-list-item card-set-item">
               <img
@@ -142,17 +146,21 @@
                 alt="smiling man"
                 width="264"
               />
-              <h3 class="team-name">Tom Ford</h3>
-              <p class="team-descr">Frontend Developer</p>
+              <div class="team-name-item">
+                <h3 class="team-member-name">Tom Ford</h3>
+                <p class="team-members-descr">Frontend Developer</p>
+              </div>
             </li>
-            <li class="team-list-item">
+            <li class="team-list-item card-set-item">
               <img
                 src="./images/our-team/3.jpg"
                 alt="dark haired woman"
                 width="264"
               />
-              <h3 class="team-name">Camila Garcia</h3>
-              <p class="team-descr">Marketing</p>
+              <div class="team-name-item">
+                <h3 class="team-member-name">Camila Garcia</h3>
+                <p class="team-members-descr">Marketing</p>
+              </div>
             </li>
             <li class="team-list-item card-set-item">
               <img
@@ -160,8 +168,10 @@
                 alt="smiling man with beard"
                 width="264"
               />
-              <h3 class="team-name">Daniel Wilson</h3>
-              <p class="team-descr">UI Designer</p>
+              <div class="team-name-item">
+                <h3 class="team-member-name">Daniel Wilson</h3>
+                <p class="team-members-descr">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -169,7 +179,7 @@
     </main>
     <!-- Footer -->
     <footer class="footer">
-      <div class="footer-items">
+      <div class="footer-items container">
         <a href="./index.html" class="footer-logo link"
           >Web<span class="footer-logo-part">Studio</span></a
         >
