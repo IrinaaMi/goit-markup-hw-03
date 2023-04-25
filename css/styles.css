@@ -102,10 +102,6 @@ button {
   gap: 40px;
 }
 
-.nav-link-section {
-  
-}
-
 .header-container {
   display: flex;
   align-items: center;
@@ -189,6 +185,7 @@ margin: auto;
   background-color: var(--hover-focus-color);
 }
 /* About us */
+
 .about-us {
   display: flex;
   gap: 24px;
@@ -232,7 +229,6 @@ margin: auto;
   text-transform: capitalize;
   color: var(--main-text-color);
   margin-bottom: 72px;
-  margin-top: 120px;
 }
 
 .what-are-we-doing-list {
@@ -415,7 +411,7 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .portfilio-card-item{
-  border: 1px solid #E7E9FC;
+  border: 1px solid var(--portfolio-btn-color);
   padding-bottom: 32px;
   margin-bottom: 48px;
   width: calc((100% - 48px) / 3);
