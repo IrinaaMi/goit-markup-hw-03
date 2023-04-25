@@ -1,0 +1,373 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  /* Fonts */
+  --primary-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+
+  /* Color */
+  --main-text-color: #2e2f42;
+  --light-color: #434455;
+  --white-color: #ffffff;
+  --secondary-text-color: #f4f4fd;
+
+  --bg-dark-color: #2e2f42;
+  --bg-light-color: #f4f4fd;
+
+  --accent-color: #4d5ae5;
+
+  --hover-focus-color: #404bbf;
+
+  /* Other */
+  --indent:24px;
+  --items:4;
+}
+
+body {
+  color: var(--light-color);
+  font-family: var(--primary-font);
+  background-color: var(--white-color);
+  width: 1440px;
+}
+/* Reset start */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+img {
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--hover-focus-color);
+}
+
+.link:focus {
+  color: var(--hover-focus-color);
+}
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+  /* outline: 2px solid red;
+  outline-offset: -2px; */
+}
+
+/* Header */
+.logo {
+  font-family: var(--secondary-font);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  margin-right: 76px;
+  margin-left: 156px;
+  color: var(--accent-color);
+}
+.logo-part {
+  color: var(--main-text-color);
+}
+
+.nav-links-list {
+  font-style: normal;
+}
+.header-contact-links {
+  display: flex;
+}
+
+.nav-link-section {
+  justify-content: right;
+}
+
+.header-container {
+  border-bottom: 1px solid #e7e9fc;
+  display: flex;
+  align-items: center;
+  height: 72px;
+}
+
+.header-nav-item {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+  padding: 24px 0;
+}
+.header-nav-list {
+  display: flex;
+  align-items: center;
+  margin-right: 332px;
+  gap: 40px;
+}
+
+.header-contact {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--light-color);
+  margin-right: 40px;
+  padding: 24px 0;
+}
+/* Hero */
+.hero {
+  background-color: var(--bg-dark-color);
+  width: 1440px;
+  height: 600px;
+}
+
+.main-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: var(--white-color);
+  text-align: center;
+}
+
+.btn {
+  min-width: 169px;
+  min-height: 56px;
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: var(--white-color);
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--hover-focus-color);
+}
+
+.btn:focus {
+  background-color: var(--hover-focus-color);
+}
+/* About us */
+.about-us {
+  display: flex;
+  gap: 24px;
+  width: 1128px;
+  padding: 0 auto;
+  margin: 120px 0 120px 0;
+}
+
+.about-us-title,
+.team-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+}
+.about-us-descr,
+.team-descr {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--light-color);
+}
+
+/* What are we doing */
+
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--main-text-color);
+  margin-bottom: 72px;
+  margin-top: 120px;
+}
+
+.what-are-we-doing-list {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 120px;
+}
+
+/* Our Team */
+
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
+  background-color: var(--bg-light-color);
+}
+
+.card-set-item{
+  flex-basis: calc((100% - var(--indent) * (var(--items) -1 )) /var(--items));
+}
+
+.team-list-item {
+  background-color: var(--white-color);
+  width: 264px;
+  height: 380px;
+  text-align: center;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+border-radius: 0px 0px 4px 4px;
+}
+
+.team-list-cards {
+  display: flex;
+  padding-bottom: 120px;
+  gap: 24px;
+}
+
+
+
+/* Footer */
+
+.footer {
+  display: block;
+  background-color: var(--bg-dark-color);
+  font-family: var(--secondary-font);
+  height: 312px;
+}
+
+.footer-items{
+  padding: 100px 1020px 100px 156px;
+}
+
+.footer-descr {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+  font-family: var(--primary-font);
+  margin-top: 16px;
+}
+
+.footer-logo {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+  text-transform: uppercase;
+}
+.footer-logo-part {
+  color: var(--secondary-text-color);
+}
+
+/* PORTFOLIO */
+
+/* Button */
+
+.page-nav-button {
+  padding: 12px 24px;
+  background-color: var(--secondary-text-color);
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--accent-color);
+  padding: 12px 24px;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.page-nav-button-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  gap: 24px;
+}
+.page-nav-button:hover {
+  color: var(--white-color);
+  background-color: var(--hover-focus-color);
+}
+
+.page-nav-button:focus {
+  color: var(--white-color);
+  background-color: var(--hover-focus-color);
+}
+/* Portfolio list */
+.list-item-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+}
+.list-item-descr {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--light-color);
+}
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.portfolio-section{
+  display: flex;
+  flex-wrap: wrap;
+ gap: 24px;
+ justify-content: center;
+}
+
+.portfilio-card{
+  border: 1px solid #E7E9FC;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  margin-bottom: 48px;
+}
